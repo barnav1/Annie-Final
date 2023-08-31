@@ -1,0 +1,35 @@
+{
+  "name": "Beta",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "pm2dev": "pm2 start ./src/index.js --watch --no-autorestart",
+    "main": "pm2 start ./src/index.js --name \"Annie\" -o ./logs.txt -e ./errors.txt --time --restart-delay=3000",
+    "stop": "pm2 stop Annie"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "@discordjs/voice": "^0.6.0",
+    "discord-music-player": "^8.0.2",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.0",
+    "mal-scraper": "^2.11.3",
+    "minecraft-server-util": "^3.5.2",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.5",
+    "node": "^16.9.1",
+    "node-fetch": "^2.6.2",
+    "nodemon": "^2.0.12",
+    "npm": "^7.20.5",
+    "pm2": "^5.1.0",
+    "slappey": "^3.0.0",
+    "uuid": "^8.3.2",
+    "ytdl-core": "^4.9.1"
+  }
+}
